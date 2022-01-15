@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferando Version 10 Design</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="topbar-container">
+        <div class="topbar">
+            <div>
+                <img src="img/arrow left.png">
+                <img src="img/lieferando.svg">
+            </div>
+
+            <p class="adress">Schlierseestr. 83, Munich</p>
+            <div>
+                <img src="img/country.png">
+                <img class="margin10lr" src="img/menu.png">
+            </div>
+
+
+        </div>
+        </a>
+    </div>
+    </div>
+
+    </div>
+
+
+    <!-- left selection side -->
+
+    <div class="wholeSite">
+
+
+
+        <div class="main">
+
+
+            <div>
+                <img class="headerPicture" src="img/header.jpg">
+            </div>
+            <div class="restaurant_logo">
+                <div class="restaurant_logo_container">
+                    <div class="restaurant_logo_inner">
+                        <img class="logo" src="img/logo.png">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="titleBar">
+                <div>
+                    <h2>Hans im Glück</h2>
+                    <img class="starRating" src="img/stars.png">
+                </div>
+                <div class="InfoButtons">
+                    <div class="InfoLogoBox">
+                        <img class="InfoIMG" src="img/i.png">
+                    </div>
+                    <div class="InfoLogoBox">
+                        <img class="heartIMG" src="img/heart.png">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menuBar greyBackground">
+                <div>
+                    <img class="heartIMG" src="img/search.png">
+                </div>
+                <div class="menuItems">
+                    <p>Beliebte Gerichte</p>
+                    <p>Veganer Sommer</p>
+                    <p>Unsere Glücksmenüs</p>
+                </div>
+            </div>
+
+
+
+            <div class="selection">
+                <div class="greyBackground padding20 marginbottom10">
+                    <h3>Beliebte Gerichte</h3>
+                </div>
+                <div class="selectionbox marginbottom10">
+                    <div class="selectionboxInfo">
+                        <h3 id="name">Geissbock</h3>
+                        <p>mit Rindfleisch, Ziegenkäse, Speck und Feigensosse</p>
+                        <p>Choice of: Sauerteigbrötchen (vegan), Mehrkornbrötchen (vegan), Briochebrötchen (vegetarisch)
+                            and more.</p>
+                        <h3 class="orange margintop45" id="price">6,50€</h3>
+                    </div>
+                    <div class="pictureButton">
+                        <div class="selectionboxPicture">
+                            <img src="img/geissbockburger.png">
+                        </div>
+                        <div>
+                            <button class="SelectionAddButton" onclick="addToBasket('Geissbock Burger',6.5)">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="selectionbox marginbottom10">
+                    <div class="selectionboxInfo">
+                        <h3 id="name">Pommes</h3>
+                        <p>Aus frischen Kartoffeln</p>
+                        <p>Goldbraun gepacken</p>
+                        <h3 class="orange margintop45" id="price">3,50€</h3>
+                    </div>
+                    <div class="pictureButton">
+                        <div class="selectionboxPicture">
+                            <img src="img/süßkartoffelpommes.png">
+                        </div>
+                        <div>
+                            <button class="SelectionAddButton" onclick="addToBasket('Pommes',3.5)">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <!-- right basket side -->
+
+        <div class="basket">
+            <p class="center BasketHeadlineFont">Warenkorb</p>
+            <div class="emptyBasket" id="basket">
+                <div>
+                    <img src="img/basket.png">
+                </div>
+                <div>
+                    <p class="centerText">Wähle leckere Gerichte aus der Karte und bestelle Dein Menü</p>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="flex between width100pc">
+                    <div>
+                        <p>Sub-total</p>
+                    </div>
+                    <div>
+                        <p>0,00€</p>
+                    </div>
+                </div>
+                <div class="flex between width100pc">
+                    <p class="bold">
+                        Total
+                    </p>
+                    <p class="bold">
+                        0,00€
+                    </p>
+                </div>
+
+                <div class="line"></div>
+
+                <div>
+                    <p>Sorry, you can't order yet. Hans im Glück has set a minimum order amount of 10,00 € (excl.
+                        delivery costs)</p>
+                </div>
+                
+
+                <div class="width100pc">
+                    <div class="disabledOrderButton">
+                        <p>Order</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sum">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
+</html>
